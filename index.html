@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prosta Strona</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-right: 20px;
+        }
+
+        .main-content {
+            width: 50%;
+            background-color: #e2e2e2;
+            padding: 15px;
+        }
+
+        .sidebar-right {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, fuga dolor autem facere perferendis, adipisci cum et quod mollitia pariatur, ullam delectus. Commodi, ad volupt
-        atibus quasi quidem impedit ab incidunt!</p>
+
+    <header>
+        <h1>Prosta Strona z Lorem Ipsum</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sidebar 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non malesuada orci.</p>
+        </div>
+
+        <div class="main-content">
+            <h2>Główna Zawartość</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat feugiat nulla vel convallis. Vivamus ut nibh id velit suscipit fermentum. Aenean sed placerat sem. Cras lacinia facilisis felis, sed pulvinar erat auctor nec.</p>
+        </div>
+
+        <div class="sidebar-right">
+            <h2>Sidebar 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et risus vel quam gravida volutpat.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Stopka - 2024</p>
+    </footer>
+
 </body>
 </html>
