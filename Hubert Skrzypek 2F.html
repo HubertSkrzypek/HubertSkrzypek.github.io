@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio - Web Developer i Front-end Developer. Projekty, umiejętności i kontakt.">
+    <meta name="keywords" content="portfolio, web developer, front-end developer, projekty, umiejętności">
+    <meta name="author" content="Pseudonim">
+
+    <!-- SEO: Open Graph/Twitter Card Meta Tags -->
+    <meta property="og:title" content="Portfolio Web Developer - Pseudonim">
+    <meta property="og:description" content="Sprawdź moje projekty i umiejętności jako web developer. Skontaktuj się ze mną!">
+    <meta property="og:image" content="link_do_obrazka.png">
+    <meta property="og:url" content="http://twoje-portfolio.com">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio Web Developer - Pseudonim">
+    <meta name="twitter:description" content="Sprawdź moje projekty i umiejętności. Skontaktuj się ze mną!">
+    <meta name="twitter:image" content="link_do_obrazka.png">
+
+    <title>Portfolio - Pseudonim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+/* Stylizacja bazowa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Sekcja projekty */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Sekcja umiejętności */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Sekcja kontakt */
+#contact p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Stopka */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+</style>
+
+    <!-- Nagłówek -->
+    <header>
+        <div class="container">
+            <h1>Hubert Skrzypek</h1>
+            <p>Web Developer | Front-end Developer</p>
+        </div>
+    </header>
+
+    <!-- Sekcja O mnie -->
+    <section id="about" class="container">
+        <h2>O mnie</h2>
+        <p>Cześć! Nazywam się Hubert.Uwielbiam uczyć się nowych technologii i budować projekty, które pomagają rozwiązywać problemy.</p>
+    </section>
+
+    <!-- Sekcja Projekty -->
+    <section id="projects" class="container">
+        <h2>Projekty</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Projekt 1</h3>
+                <p>Opis projektu 1. Zastosowane technologie: HTML, CSS.</p>
+                <a href="https://hubertskrzypek.github.io/zadanie.html">Zobacz projekt</a>
+            </div>
+            <div class="project">
+                <h3>Projekt 2</h3>
+                <p>Opis projektu 2. Zastosowane technologie: HTML, CSS.</p>
+                <a href="https://hubertskrzypek.github.io/HubertSkrzypek.html">Zobacz projekt</a>
+            </div>
+            <div class="project">
+                <h3>Projekt 3</h3>
+                <p>Opis projektu 3. Zastosowane technologie: HTML, CSS.</p>
+                <a href="https://HubertSkrzypek.github.io/index.html">
+
+
+Zobacz projekt</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Umiejętności -->
+    <section id="skills" class="container">
+        <h2>Umiejętności</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>GitHub</li>
+			<li>Urządzenia techniki komputerowej</li>
+        </ul>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="contact" class="container">
+        <h2>Kontakt</h2>
+        <p>Masz pytania lub chcesz współpracować? Napisz do mnie !</p>
+        <a href="mailto:twojemail@example.com" class="btn">Wyślij wiadomość</a>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Portfolio - Hubert Skrzypek. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
